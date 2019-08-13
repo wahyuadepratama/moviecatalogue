@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="defaultDetailPosterHeight">175dp</dimen>
+    <dimen name="defaultDetailPosterWidth">115dp</dimen>
+    <dimen name="defaultDetailBackdropHeight">220dp</dimen>
+</resources>

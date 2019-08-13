@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#951b81</color>
+    <color name="colorPrimaryDark">#951b81</color>
+    <color name="colorAccent">#951b81</color>
+    <color name="colorMenu">#FFFFFF</color>
+    <color name="colorMenuPressed">#D0E7FA</color>
+    <color name="colorRatingProgress">#F4C417</color>
+    <color name="colorRatingBackground">#CCCACA</color>
+    <color name="colorInfo">#A6B5BCE4</color>
+    <color name="colorHint">#72B7B9BE</color>
+
+    <color name="colorDanger">#755470</color>
+    <color name="colorTransparent">#00FFFFFF</color>
+    <color name="colorCardTransparent">#8F000000</color>
+</resources>

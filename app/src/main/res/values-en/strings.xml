@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">WhatsMovie</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium, adipisci aperiam architecto cupiditate, dolore earum eos est eum fugiat iusto labore libero magnam odit perferendis quisquam sed vitae voluptatibus?</string>
+    <string name="welcome">What do you want to watch today?</string>
+
+    <string name="txt_title_release_date">Release Date</string>
+    <string name="txt_title_genre">Genre</string>
+    <string name="txt_title_family">Family</string>
+    <string name="txt_title_not_family">Not Family Genre</string>
+    <string name="txt_title_trailer">Title</string>
+    <string name="txt_title_site">Source</string>
+    <string name="txt_title_size">Size</string>
+
+    <string name="action_home">Home</string>
+    <string name="action_movie">Movies</string>
+    <string name="action_tv_show">TV Show</string>
+    <string name="action_favorite">Favorite</string>
+
+    <string name="menu_language">Language</string>
+    <string name="menu_refresh">Update</string>
+    <string name="menu_notif">Notification</string>
+
+    <string name="btn_add_favorite">+ Add to favorite</string>
+    <string name="btn_remove_favorite">Remove from favorite</string>
+
+    <string name="connection_error">Load data failed.\nPlease check your connection..</string>
+    <string name="loading">Please waiting..</string>
+    <string name="hint_search">Search ..</string>
+    <string name="not_supported_language_movie">There is not movies\'s overview for this language</string>
+    <string name="not_supported_language_tv">There is not TV show\'s overview for this language</string>
+
+    <!--content description-->
+    <string name="content_preview_movies">Preview Poster Movies</string>
+    <string name="content_detail_poster_movies">Detail Poster Movies</string>
+    <string name="content_detail_backdrop_movies">Detail Backdrop Movies</string>
+
+    <!--end content description-->
+
+    <!--notif if favorite item hasn't saved yet-->
+    <string name="info_favorite_movie">You have not saved movie yet</string>
+    <string name="info_favorite_tv">You have not saved tv show yet</string>
+    <!--end notif if favorite item hasn't saved yet-->
+
+    <!--notif message recycler view for movie fragment-->
+    <string name="popularity_desc">Most Popular Movies</string>
+    <string name="upcoming_movies">Upcoming Movies</string>
+    <string name="nowplaying_movies">Now Playing Movies</string>
+    <!--end notif message-->
+
+    <!--notif message recycler view for tv show fragment-->
+    <string name="popularity_tv">Most Popular TV Show</string>
+    <!--end notif message-->
+
+    <!--widget movie-->
+    <string name="appwidget_text">Your favorite movie</string>
+    <string name="reminder_movie">Movie Release Notification</string>
+    <string name="reminder_application">Reminder Notification</string>
+    <string name="off">Off</string>
+    <string name="on">On</string>
+    <!--end widget movie-->
+
+</resources>

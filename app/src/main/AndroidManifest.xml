@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.github.wahyuadepratama.whatsmovie">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.github.wahyuadepratama.whatsmovie.provider.READ_WRITE" android:protectionLevel="normal"/>
+    <permission android:name="com.github.wahyuadepratama.whatsmovie.provider.READ_WRITE" android:protectionLevel="normal"/>
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/movie"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/movie"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.SettingActivity"></activity>
+
+        <receiver android:name=".widget.FavoriteMovieWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/new_app_widget_info" />
+        </receiver>
+
+        <service
+            android:name=".service.StackWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <receiver
+            android:name=".receiver.DailyReminderMovie"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".receiver.DailyReminderApps"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity.HomeActivity"
+            android:label="@string/action_movie" />
+        <activity
+            android:name=".activity.MovieDetailActivity"
+            android:theme="@style/AppTheme.ActionBar.Transparent" />
+        <activity
+            android:name=".activity.TVShowDetailActivity"
+            android:theme="@style/AppTheme.ActionBar.Transparent" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:name=".provider.FavoriteMovieProvider"
+            android:authorities="com.github.wahyuadepratama.whatsmovie.provider"
+            android:exported="true"
+            android:permission="com.github.wahyuadepratama.whatsmovie.provider.READ_WRITE"/>
+    </application>
+
+</manifest>
